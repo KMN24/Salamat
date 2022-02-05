@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/child_nav"
+    app:startDestination="@id/childFragment">
+
+    <fragment
+        android:id="@+id/childFragment"
+        android:name="kg.sunrise.salamat.ui.main.child.ChildFragment"
+        android:label="child_fragment"
+        tools:layout="@layout/child_fragment" >
+        <action
+            android:id="@+id/action_childFragment_to_childDetailFragment"
+            app:destination="@id/childDetailFragment" >
+        </action>
+        <action
+            android:id="@+id/action_childFragment_to_childAddFragment"
+            app:destination="@id/childAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/childDetailFragment"
+        android:name="kg.sunrise.salamat.ui.main.child.detail.ChildDetailFragment"
+        android:label="child_detail_fragment"
+        tools:layout="@layout/child_detail_fragment" >
+        <argument
+            android:name="slug"
+            app:argType="string"
+            app:nullable="true"/>
+        <action
+            android:id="@+id/action_childDetailFragment_to_childSubFragment"
+            app:destination="@id/childSubFragment" />
+        <action
+            android:id="@+id/action_childDetailFragment_to_childArchiveFragment"
+            app:destination="@id/childArchiveFragment">
+            <argument
+                android:name="slug"
+                app:argType="string"
+                />
+            <argument android:name="child_name"
+                app:argType="string"/>
+        </action>
+        <action
+            android:id="@+id/action_childDetailFragment_to_childFragment"
+            app:destination="@id/childFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/childAddFragment"
+        android:name="kg.sunrise.salamat.ui.main.child.childAdd.ChildAddFragment"
+        android:label="fragment_child_add"
+        tools:layout="@layout/fragment_child_add" >
+        <action
+            android:id="@+id/action_childAddFragment_to_childFragment"
+            app:destination="@id/childFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/childSubFragment"
+        android:name="kg.sunrise.salamat.ui.main.child.childSubCategory.ChildSubFragment"
+        android:label="fragment_child_sub"
+        tools:layout="@layout/fragment_child_sub" >
+        <argument
+            android:name="data"
+            app:argType="kg.sunrise.salamat.data.remote.response.ChildDetailResponse"/>
+        <action
+            android:id="@+id/action_childSubFragment_to_childFragment"
+            app:destination="@id/childFragment" />
+        <argument
+            android:name="slug"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/childArchiveFragment"
+        android:name="kg.sunrise.salamat.ui.main.child.childSubCategory.archive.ChildArchiveFragment"
+        android:label="fragment_child_archive"
+        tools:layout="@layout/fragment_child_archive">
+        <argument
+            android:name="slug"
+            app:argType="string"/>
+        <argument android:name="child_name"
+            app:argType="string"/>
+    </fragment>
+</navigation>

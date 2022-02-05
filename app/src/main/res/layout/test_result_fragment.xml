@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/incl_toolbar"
+        layout="@layout/toolbar_with_shadow" />
+
+    <TextView
+        android:id="@+id/btn_menu"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_test_result"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:text="@string/go_to_menu"
+        android:textColor="@color/white_ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_test_again"
+        app:layout_constraintStart_toStartOf="@+id/btn_test_again"
+        app:layout_constraintTop_toBottomOf="@+id/btn_test_again" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/btn_test_again"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/btn_test_result"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:text="@string/test_again"
+        android:textColor="@color/white_ffffff"
+        android:textSize="18sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/red_FF3156"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_last_star" />
+
+    <ImageView
+        android:id="@+id/iv_main_star"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incl_toolbar"
+        app:srcCompat="@drawable/ic_test_main_star" />
+
+    <ImageView
+        android:id="@+id/iv_last_star"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_main_star"
+        app:layout_constraintTop_toBottomOf="@+id/incl_toolbar"
+        app:srcCompat="@drawable/ic_little_star_red" />
+
+    <ImageView
+        android:id="@+id/iv_first_star"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_main_star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incl_toolbar"
+        app:srcCompat="@drawable/ic_little_star_red" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

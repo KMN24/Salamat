@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav"
+    app:startDestination="@id/prefaceFragment">
+
+    <fragment
+        android:id="@+id/prefaceFragment"
+        android:name="kg.sunrise.salamat.ui.auth.preface.PrefaceFragment"
+        android:label="preface_fragment"
+        tools:layout="@layout/preface_fragment" >
+        <action
+            android:id="@+id/action_prefaceFragment_to_languageFragment"
+            app:destination="@id/languageFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/prefaceFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="kg.sunrise.salamat.ui.auth.language.LanguageFragment"
+        android:label="language_fragment"
+        tools:layout="@layout/language_fragment" >
+        <action
+            android:id="@+id/action_languageFragment_to_chooseFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/chooseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseFragment"
+        android:name="kg.sunrise.salamat.ui.auth.choose.ChooseFragment"
+        android:label="choose_fragment"
+        tools:layout="@layout/choose_fragment" >
+        <action
+            android:id="@+id/action_chooseFragment_to_loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_chooseFragment_to_registrationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="kg.sunrise.salamat.ui.auth.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_confirmFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/confirmFragment" >
+            <argument
+                android:name="confirmArgs"
+                app:argType="kg.sunrise.salamat.data.arg.ConfirmArgData" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="kg.sunrise.salamat.ui.auth.registration.RegistrationFragment"
+        android:label="registration_fragment"
+        tools:layout="@layout/registration_fragment" >
+        <action
+            android:id="@+id/action_registrationFragment_to_confirmFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/confirmFragment" >
+            <argument
+                android:name="confirmArgs"
+                app:argType="kg.sunrise.salamat.data.arg.ConfirmArgData" />
+        </action>
+        <action
+            android:id="@+id/action_registrationFragment_to_confidentialityFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/confidentialityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="kg.sunrise.salamat.ui.auth.confirm.ConfirmFragment"
+        android:label="confirm_fragment"
+        tools:layout="@layout/confirm_fragment" >
+        <argument
+            android:name="confirmArgs"
+            app:argType="kg.sunrise.salamat.data.arg.ConfirmArgData" />
+        <action
+            android:id="@+id/action_confirmFragment_to_downLoadFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/downLoadFragment" />
+        <action
+            android:id="@+id/action_confirmFragment_to_regionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/regionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/downLoadFragment"
+        android:name="kg.sunrise.salamat.ui.auth.download.DownLoadFragment"
+        android:label="down_load_fragment"
+        tools:layout="@layout/down_load_fragment" />
+    <fragment
+        android:id="@+id/confidentialityFragment"
+        android:name="kg.sunrise.salamat.ui.auth.confidentiality.ConfidentialityFragment"
+        android:label="confidentiality_fragment"
+        tools:layout="@layout/confidentiality_fragment" />
+    <fragment
+        android:id="@+id/regionFragment"
+        android:name="kg.sunrise.salamat.ui.auth.region.RegionFragment"
+        android:label="region_fragment"
+        tools:layout="@layout/region_fragment" >
+        <action
+            android:id="@+id/action_regionFragment_to_downLoadFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/downLoadFragment" />
+    </fragment>
+</navigation>

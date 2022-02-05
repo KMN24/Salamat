@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="kg.sunrise.salamat.ui.main.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_homeDetailFragment"
+            app:destination="@id/homeDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_freqAskedQuesFragment"
+            app:destination="@id/freqAskedQuesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_doctorsAppointmentStep1Fragment"
+            app:destination="@id/doctorsAppointmentStep1Fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeDetailFragment"
+        android:name="kg.sunrise.salamat.ui.main.home.detail.HomeDetailFragment"
+        android:label="home_detail_fragment"
+        tools:layout="@layout/home_detail_fragment">
+        <argument
+            android:name="categoryName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="categoryId"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_homeDetailFragment_to_categoryItemsFragment"
+            app:destination="@id/categoryItemsFragment" />
+        <action
+            android:id="@+id/action_homeDetailFragment_to_testMainFragment"
+            app:destination="@id/testMainFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/categoryItemsFragment"
+        android:name="kg.sunrise.salamat.ui.main.home.detail.categoryItems.CategoryItemsFragment"
+        android:label="fragment_category_items"
+        tools:layout="@layout/fragment_category_items">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="slug"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_categoryItemsFragment_to_homeDetailFragment"
+            app:destination="@id/homeDetailFragment"
+            app:popUpTo="@id/categoryItemsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/firstCategoryFragment"
+        android:name="kg.sunrise.salamat.ui.main.home.detail.categoryItems.fragments.CategoryDevelopNormsFragment"
+        android:label="fragment_first_cat"
+        tools:layout="@layout/fragment_category_develop_norms" />
+    <fragment
+        android:id="@+id/freqAskedQuesFragment"
+        android:name="kg.sunrise.salamat.ui.main.home.freqAskedQues.FreqAskedQuesFragment"
+        android:label="FreqAskedQuesFragment" >
+        <action
+            android:id="@+id/action_freqAskedQuesFragment_to_faqDetailFragment"
+            app:destination="@id/faqDetailFragment" >
+            <argument
+                android:name="id"
+                android:defaultValue="0" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/faqDetailFragment"
+        android:name="kg.sunrise.salamat.ui.main.home.freqAskedQues.detail.fragment.FaqDetailFragment"
+        android:label="fragment_freq_asked_ques_detail"
+        tools:layout="@layout/fragment_freq_asked_ques_detail">
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer"/>
+    </fragment>
+    <fragment
+        android:id="@+id/doctorsAppointmentStep1Fragment"
+        android:name="kg.sunrise.salamat.ui.main.home.doctors_appointment.step1.DoctorsAppointmentStep1Fragment"
+        android:label="fragment_doctors_appointment_step1"
+        tools:layout="@layout/fragment_doctors_appointment_step1" >
+        <action
+            android:id="@+id/action_doctorsAppointmentStep1Fragment_to_doctorsAppointmentStep2Fragment"
+            app:destination="@id/doctorsAppointmentStep2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorsAppointmentStep2Fragment"
+        android:name="kg.sunrise.salamat.ui.main.home.doctors_appointment.step2.DoctorsAppointmentStep2Fragment"
+        android:label="fragment_doctors_appointment_step2"
+        tools:layout="@layout/fragment_doctors_appointment_step2" >
+        <action
+            android:id="@+id/action_doctorsAppointmentStep2Fragment_to_doctorsAppointmentStep3Fragment"
+            app:destination="@id/doctorsAppointmentStep3Fragment" >
+            <argument
+                android:name="ppi"
+                app:argType="integer"/>
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/doctorsAppointmentStep3Fragment"
+        android:name="kg.sunrise.salamat.ui.main.home.doctors_appointment.step3.DoctorsAppointmentStep3Fragment"
+        android:label="fragment_doctors_appointment_step3"
+        tools:layout="@layout/fragment_doctors_appointment_step3" >
+        <argument
+            android:name="ppi"
+            android:defaultValue="0"
+            app:argType="integer"/>
+        <action
+            android:id="@+id/action_doctorsAppointmentStep3Fragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/home_nav"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/testMainFragment"
+        android:name="kg.sunrise.salamat.ui.main.home.detail.test.TestMainFragment"
+        android:label="test_main"
+        tools:layout="@layout/test_main">
+        <argument
+            android:name="slug"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true"/>
+        <action
+            android:id="@+id/action_testMainFragment_to_testResultFragment"
+            app:destination="@id/testResultFragment"
+            app:popUpTo="@id/testMainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/testResultFragment"
+        android:name="kg.sunrise.salamat.ui.main.home.detail.test.detail.result.TestResultFragment"
+        android:label="TestResultFragment">
+        <argument
+            android:name="correctAnswers"
+            app:argType="integer"
+            />
+        <argument
+            android:name="slug"
+            app:argType="string"
+            />
+        <argument
+            android:name="title"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_testResultFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_testResultFragment_to_testMainFragment"
+            app:destination="@id/testMainFragment" />
+    </fragment>
+</navigation>

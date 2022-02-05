@@ -1,0 +1,234 @@
+<resources>
+    <string name="app_name">Salamat</string>
+    <string name="Kyrgyz">Кыргызский</string>
+    <string name="Russian">Русский</string>
+    <string name="Next">Далее</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Registration">Регистрация</string>
+    <string name="Login">Вход</string>
+    <string name="By_number">Через номер</string>
+    <string name="confirm">Я ознакомился(ась) с правилами политики и конфиденциальности</string>
+    <string name="_996">+996 555 55 55 55</string>
+    <string name="_000_000">000 000</string>
+    <string name="confirmCode">Подтверждение кода</string>
+    <string name="confirm_error">Ошибка подтверждения</string>
+    <string name="Confidentiality_condition">Условия конфиденциальности</string>
+    <string name="Confidentiality_html_title">Дорогие родители!</string>
+    <string name="Confidentiality_html_text1">Приложение Salamat поможет вам поддерживать и улучшать здоровье ваших детей, а так же принимать активное участие в планировании профилактических мероприятий. Мы собрали ценную информацию об определении норм в развитии детей, о возможных рисках для здоровья, и рекомендации по самым важным вопросам связанных со здоровьем. Закрепить полученные знания вам помогут специальные видеоматериалы, тесты и чек-листы.\n</string>
+    <string name="Confidentiality_html_text2">Приложение Salamat работает как в он-лайн режиме, так и в офф-лайн режиме (без подключения к интернету). Для эффективного планирования профилактических мероприятий для вашей семьи, приложение запросит у вас внести личные данные как дата рождения, пол ребенка, даты прививок и т.п. Все эти личные данные сохраняются только на вашем мобильной устройстве и не будут использованы другой стороной.</string>
+    <string name="before_registrion">Перед регистрацией ознакомьтесь с условиями конфиденциальности</string>
+    <string name="Choose_region">Выбрать регион</string>
+    <string name="toChoose_region">Выберите регион</string>
+    <string name="error_no_internet">Проверьте подключение к интернету</string>
+    <string name="error_network">Ошибка сети</string>
+    <string name="error_server">Ошибка сервера</string>
+    <string name="error_not_found">Не найдена страница</string>
+    <string name="error_big_file">Слишком большой размер файла</string>
+    <string name="nav_home">home</string>
+    <string name="nav_child">child</string>
+    <string name="nav_notification">notification</string>
+    <string name="profile">profile</string>
+    <string name="Category">Категории</string>
+    <string name="subcategory">Подкатегория №1</string>
+    <string name="notification">Уведомления</string>
+    <string name="profile_acc">Профиль</string>
+    <string name="child_acc">Дети</string>
+    <string name="childadd">Добавить ребенка</string>
+    <string name="writing_to_doctor">Запись к семейному врачу</string>
+    <string name="constantly_asking_questions">Часто задаваемые вопросы</string>
+    <string name="Get_exam">Пройти тест</string>
+    <string name="scheduling_appointments">Запись на прием</string>
+
+    <string-array name="months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+
+
+    //Profile
+    <string name="login">Логин:</string>
+    <string name="notify">Звук уведомления</string>
+    <string name="change_lang">Сменить язык</string>
+    <string name="exit">Выйти</string>
+    <string name="about_app">О приложении</string>
+    <string name="sign_out">Выйти из аккаунта</string>
+    <string name="exit_text">после выхода все оффлайн данные будут удалены!</string>
+    <string name="stay_acc">Остаться</string>
+    <string name="change_region">Сменить регион</string>
+
+    <string-array name="region_data">
+        <item>bishkek:г.Бишкек</item>
+        <item>osh_city:г.Ош</item>
+        <item>batken:Баткен</item>
+        <item>jalal_abad:Джалал-Абад</item>
+        <item>naryn:Нарын</item>
+        <item>osh:Ош</item>
+        <item>talas:Талас</item>
+        <item>chuy:Чуй</item>
+        <item>yssyk_kol:Ыссык-куль</item>
+    </string-array>
+
+
+    //Child
+    <string name="birth_date">Дата рождения</string>
+    <string name="choose_date">Введите дату</string>
+    <string name="next">Следующее</string>
+    <string name="date">Дата</string>
+    <string name="last">Последнее</string>
+    <string name="now">Текущее</string>
+    <string name="archive">Архив</string>
+    <string name="delete">Удалить</string>
+    <string name="Developmental_norms">Нормы в развитии</string>
+    <string name="Parent_skills">Навыки родителей</string>
+    <string name="Medical_support">Медицинское сопровождение</string>
+    <string name="help">Помощь</string>
+    <string name="search">Поиск</string>
+    <string name="child_param">Параметры ребенка</string>
+
+    //Doctor appointment
+    <string name="step1">Шаг 1 из 3</string>
+    <string name="title_your_data">Ваши данные</string>
+    <string name="description_your_data">Персональный идентификационный номер из 14 символов на паспорте</string>
+    <string name="text_pin">ПИН*</string>
+    <string name="search_pin">Введите ПИН</string>
+    <string name="text_phone">Номер телефона*</string>
+    <string name="search_phone">0999 88 77 66</string>
+    <string name="you_are_registered">Вы приписаны</string>
+    <string name="title_organization">Организация:</string>
+    <string name="title_address">Адрес:</string>
+    <string name="title_fmc_name">ГСВ:</string>
+    <string name="title_phones_registry">Телефон регистратуры:</string>
+    <string name="underscore">-----------------</string>
+    <string name="title_fio">ФИО:</string>
+    <string name="title_status_mhi">Статус ОМС:</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="clear">Очистить</string>
+    <string name="step2">Шаг 2 из 3</string>
+    <string name="choose_doctor">Выберите специалиста</string>
+    <string name="choose_visit">Выберите посещение</string>
+    <string name="list_doctors">Список врачей узких специальностей доступен при повторном посещении.</string>
+    <string name="first_appointment">Первичное посещение</string>
+    <string name="return_appointment">Повторное посещение</string>
+    <string name="send">Отправить</string>
+    <string name="ne_zapolnena_baza_dannyh">В настоящее время в данной организации еще не заполнена база данных специалистов.\n\nНеобходимо обратиться в регистратуру организации.\n\nПриносим извинения за доставленные неудобства.</string>
+    <string name="input_fio_or_specialty">Введите ФИО или специальность</string>
+    <string name="step3">Шаг 3 из 3</string>
+    <string name="choose_date_and_time">Выберите удобную вам дату и время</string>
+    <string name="insured">Застрахован</string>
+    <string name="uninsured">Не застрахован</string>
+    <string name="choose_another_date">Пожалуйста, выберите другую дату, информация по этой дате еще не заполнена.</string>
+    <string name="appointment_deleted">Запись удалена.</string>
+    <string name="patient_already_has_had_a_appointment">Ошибка! Пациент уже записан на указанную дату!</string>
+    <string name="time_has_passed">Указанное время уже прошло</string>
+    <string name="appointment_wasnt_removed">Посещение врача невозможно удалить</string>
+    <string name="successfully_had_an_appointment">Вы успешно записаны на прием.</string>
+    <string name="date_appointment">%s %d %d</string>
+    <string name="two_data_with_slash">%s / %s</string>
+    <string name="abolition">Отмена</string>
+
+    //Ticket
+    <string name="choose_a_date">Выбрать дату</string>
+    <string name="tv_choose_time">Выберите время</string>
+    <string name="_08_00">08:00</string>
+    <string name="schedule">Записаться</string>
+    <string name="time_you_take">- Время занятое вами</string>
+    <string name="time_another_take">- Время занятое другими пациентами</string>
+    <string name="time_is_free">- Время свободно</string>
+    <string name="to_home">На главную</string>
+    <string name="ticket_to_appointment">Талон на прием</string>
+    <string name="specialist">Специалист</string>
+    <string name="speciality">Специальность</string>
+    <string name="floor_cabinet">Этаж / Кабинет</string>
+    <string name="date_time">Дата / Время</string>
+    <string name="patient">Пациент</string>
+    <string name="title_date_of_formation_of_the_ticket">Дата формирования талона:</string>
+    <string name="download_ticket">Скачать талон</string>
+    <string name="cancel">Отказаться</string>
+    <string name="ticket_successfully__download">Талон успешно сохранен!</string>
+    <string name="require_write_permission">Без разрешения на запись вы не сможете сохранить талон!</string>
+    <string name="ticket_already_saved">Талон уже скачен.</string>
+    <string name="already_have_an_appointment">Вы уже записаны на прием, если хотите выбрать новое время, то отмените записанное время.</string>
+    <string name="slash_with_space">\ / \ </string>
+
+    //Subcategory
+    <string name="choose_date_medical">Выберите дату</string>
+    <string name="choose_sex">Выберите пол</string>
+    <string name="male_sex">Мальчик</string>
+    <string name="female_sex">Девочка</string>
+    <string name="choose_gender_child">Выберите пол ребенка</string>
+    <string name="male_gender">male</string>
+    <string name="gender_female">female</string>
+    <string name="name_child">Введите имя ребенка</string>
+    <string name="choose_photo">Выберите фото</string>
+    <string name="date_birth">Дата рождения</string>
+    <string name="edit_name_child">Введите имя ребенка</string>
+    <string name="download_photo">Загрузите фото</string>
+    <string name="succesfully_saved">Ваши данные успешно сохранены</string>
+    <string name="question_count">вопрос 1 из</string>
+    <string name="question_count_from">Вопрос ${some} из 5</string>
+    <string name="answer_choose">Выберите один из варинтов ответа</string>
+    <string name="question">"Вопрос %d из 5"</string>
+
+
+    //Auth
+    <string name="please_auth">У вас есть аккаунт, авторизуйтесь!</string>
+    <string name="please_reg">У вас нет аккаунта, зарегистрируйтесь!</string>
+
+
+
+
+    //Child
+    <string name="sussessfuly_saved">Ваши данные успешно сохранены</string>
+
+    //DataF
+    <string name="date_string">"%d-%d-%d</string>
+    <string name="gender">Пол</string>
+    <string name="choose_gender">Выберите пол ребенка</string>
+    // Archive
+    <string name="procedura_vgv">Процедура ВГВ:</string>
+    <string name="archive_item_description">Инъекцию делают внутримышечно в течение суток после рождения. Препарат имеет в своем составе ген вируса гепатита B, синтезированный в пекарские дрожжи. Реакция дрожжей стимулирует размножение антигена к вирусному заболеванию. Если малышу в первые 12 часов жизни ввели препарат от гепатита B, то в 99% случаев он приобретет устойчивый иммунитет к вирусу.</string>
+    <string name="archive_item_date">2018–4-30</string>
+    <string name="pokazatel_gomoglabina">Показатель \nгемоглобина</string>
+    <string name="_67">67</string>
+    <string name="weight">Вес</string>
+    <string name="height">Рост</string>
+    <string name="empty"> </string>
+    <string name="ok">ОК</string>
+    <string name="date_string_dot">%d.%d.%d</string>
+    <string name="dash">-</string>
+    <string name="btn_next">Далее</string>
+    <string name="successfully_deleted">Ваш ребенок успешно удален</string>
+    <string name="normOfDevelopment">Нормы в развитии</string>
+    <string name="parent_responsibilites">Обязанности родителей</string>
+    <string name="medical_observing">Медицинское сопровождение</string>
+    <string name="child_parameterss">Параметры ребенка</string>
+    <string name="mesaure">Измерить</string>
+    <string name="hemoglobin_child_parameter">Уровень гемоглобина</string>
+    <string name="weight_child_parameter">Вес</string>
+    <string name="height_child_parameter">Рост</string>
+    <string name="input_child_parameter">ввести</string>
+    <string name="current_child">Текущее</string>
+
+
+
+     //phoneNumber
+   <string name="phoneNumber">+996%s</string>
+    //Test
+    <string name="test_again">Пройти тест заново</string>
+    <string name="go_to_menu">В главное меню</string>
+    <string name="answered_correct">"Вы ответили на %d из 5 вопросов"</string>
+    <string name="successfuly_saved_see_in_archive">Успешно сохранено , посмотрите свои данные в отделе Архив</string>
+    <string name="region_successfully_changed">Регин успешно изменен!</string>
+
+</resources>

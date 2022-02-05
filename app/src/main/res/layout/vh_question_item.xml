@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="24dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
+
+    <TextView
+        android:id="@+id/tv_question_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black_4E4E4E"
+        android:textSize="14sp" />
+</androidx.cardview.widget.CardView>

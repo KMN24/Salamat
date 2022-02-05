@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "32394682242",
+    "project_id": "salamat-cf628",
+    "storage_bucket": "salamat-cf628.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32394682242:android:15ca77c8bafcfaee7ef99b",
+        "android_client_info": {
+          "package_name": "kg.sunrise.salamat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32394682242-d9tfok15vvrgnh3bol06ioibd92g1mn9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmlyDRtWRCkY_xz6cA9ZnRz7Iod-yX_uA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32394682242-d9tfok15vvrgnh3bol06ioibd92g1mn9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

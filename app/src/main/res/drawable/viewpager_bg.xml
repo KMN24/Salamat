@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:end="4dp"
+        android:start="4dp"
+        tools:targetApi="m">
+        <selector>
+            <item
+                android:drawable="@drawable/rounded_shape_violet_30dp_2d99e8"
+                android:state_selected="true" />
+        </selector>
+    </item>
+</layer-list>

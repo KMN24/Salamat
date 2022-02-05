@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.profile.fragments.ProfileHelpFragment">
+
+    <include
+        android:id="@+id/incl_progress"
+        layout="@layout/progress_layout" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@drawable/shape_bottom_30dp"
+        android:drawableStart="@drawable/ic_back_pink"
+        android:elevation="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/help"
+        android:textColor="@color/silver_4e4e4e"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
